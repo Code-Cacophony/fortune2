@@ -4,56 +4,60 @@
     <link href="./css/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="./css/styles.css" type="text/css" rel="stylesheet">
     <script src="./js/jquery-3.4.1.js"></script>
-    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/scripts.js"></script>
   </head>
   <body>
-    <h1>Fortune Quiz</h1>
-    <p>Wanna know your fortune? Look no further! Here is a quiz that'll let you know everything you need to know about 
-      how fortunate you are! Just answer the questions below and we'll let you know!
-    </p>
-  
-    <form id="fortune-survey">
-      <div class="form-group">
-        <p>Which of these have you seen in the past week? Select all that apply:</p>
-        <input type="checkbox" name="lucky-sign" type="rainbow">Rainbow<br>
-        <input type="checkbox" name="unlucky-sign" type="death">Somebody die<br>
-        <input type="checkbox" name="lucky-sign" type="clover">A four leaf clover<br>
-        <input type="checkbox" name="unlucky-sign" type="popup">A popup window containing a cursed image and unknown text<br>
-        <input type="checkbox" name="lucky-sign" type="ladybug">A ladybug<br>
-        <input type="checkbox" name="lucky-sign" type="shooting-star">Shooting star<br>
-        <input type="checkbox" name="unlucky-sign" type="emoji-movie">The Emoji Movie on Netflix or something<br>
-        <input type="checkbox" name="lucky-sign" type="meme">A super dank meme<br>
-        <input type="checkbox" name="unlucky-sign" type="coronavirus">Bad coronavirus news<br>
-      </div>
+    <div class="container">
+      <img src="img/teller.jpg">
+      <h1>Fortune Quiz</h1>
+      <p>Wanna know your fortune? Look no further! Here is a quiz that'll let you know everything you need to know about 
+        how fortunate you are! Just answer the questions below and we'll let you know!
+      </p>
+    
+      <form id="fortune-survey">
+        <div class="form-group">
+          <p>Which of these have you seen in the past week? Select all that apply:</p>
+          <input type="checkbox" name="lucky-sign" value="rainbow">Rainbow<br>
+          <input type="checkbox" name="unlucky-sign" value="death">Somebody die<br>
+          <input type="checkbox" name="lucky-sign" value="clover">A four leaf clover<br>
+          <input type="checkbox" name="unlucky-sign" value="popup">A popup window containing a cursed image and unknown text<br>
+          <input type="checkbox" name="lucky-sign" value="ladybug">A ladybug<br>
+          <input type="checkbox" name="lucky-sign" value="shooting-star">Shooting star<br>
+          <input type="checkbox" name="unlucky-sign" value="emoji-movie">The Emoji Movie on Netflix or something<br>
+          <input type="checkbox" name="lucky-sign" value="meme">A super dank meme<br>
+          <input type="checkbox" name="unlucky-sign" value="coronavirus">Bad coronavirus news<br>
+        </div>
 
-      <div class="form-group">
-        <p>What do you see in these tea leaves?</p>
-        <input type="checkbox" name="lucky" type="just-leaves">They're just tea leaves(I'm a rationalist)<br>
-        <input type="checkbox" name="unlucky" type="lobster">A lobster<br>
-        <input type="checkbox" name="lucky" type="statham">A sillouette of Jason Statham<br>
-        <input type="checkbox" name="lucky" type="void">The Void<br>
-        <input type="checkbox" name="unlucky" type="painting">Why it's none other than "The Hands Resist Him" by artist Bill Stoneham, completed in 1972.<br>
-        <input type="checkbox" name="lucky" type="botswana">It's a map of Botswana<br>
-      </div>
+        <div class="form-group">
+          <p>What do you see in these tea leaves?(to the right)</p>
+          <img src="img/tealeaf.jpg" id="tea">
+          <input type="checkbox" name="lucky" value="just-leaves">They're just tea leaves(I'm a rationalist)<br>
+          <input type="checkbox" name="unlucky" value="lobster">A lobster<br>
+          <input type="checkbox" name="lucky" value="statham">A sillouette of Jason Statham<br>
+          <input type="checkbox" name="lucky" value="void">The Void<br>
+          <input type="checkbox" name="unlucky" value="painting">Why it's none other than "The Hands Resist Him" by artist Bill Stoneham, completed in 1972.<br>
+          <input type="checkbox" name="lucky" value="botswana">It's a map of Botswana<br>
+        </div>
 
-      <div class="form-group">
-        <p>Pick your favorite colors:</p>
-        <input type="checkbox" name="lucky-color" type="blue">Blue<br>
-        <input type="checkbox" name="unlucky-color" type="yellow">Yellow<br>
-        <input type="checkbox" name="lucky-color" type="purple">Purple<br>
-        <input type="checkbox" name="unlucky-color" type="green">Green<br>
-        <input type="checkbox" name="lucky-color" type="black">Black<br>
-        <input type="checkbox" name="unlucky-color" type="orange">Orange<br>
-        <input type="checkbox" name="lucky-color" type="red">Red<br>       
-        <input type="checkbox" name="unlucky-color" type="grey">Grey<br>
-        <input type="checkbox" name="lucky-color" type="brown">Brown<br>
-      </div>
+        <div class="form-group">
+          <p>Pick your favorite colors:</p>
+          <input type="checkbox" name="lucky-color" value="blue">Blue<br>
+          <input type="checkbox" name="unlucky-color" value="yellow">Yellow<br>
+          <input type="checkbox" name="lucky-color" value="purple">Purple<br>
+          <input type="checkbox" name="unlucky-color" value="green">Green<br>
+          <input type="checkbox" name="lucky-color" value="black">Black<br>
+          <input type="checkbox" name="unlucky-color" value="orange">Orange<br>
+          <input type="checkbox" name="lucky-color" value="red">Red<br>       
+          <input type="checkbox" name="unlucky-color" value="grey">Grey<br>
+          <input type="checkbox" name="lucky-color" value="brown">Brown<br>
+        </div>
 
-      <label for="favorite-number">What is your favorite number?</label>
-      <input type="number" id="favorite-number" required>
+        <label for="favorite-number">What is your favorite number?</label>
+        <input type="number" id="favorite-number" required>
 
-      <br>
-      <button type="submit">Find your fortune!</button>
-    </form>
+        <br>
+        <button type="submit">Find your fortune!</button>
+      </form>
+    </div>
   </body>
 </html>

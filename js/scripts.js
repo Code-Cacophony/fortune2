@@ -1,5 +1,5 @@
-$(document).ready(function(event){
-  $("#form").submit(function(event){
+$(document).ready(function(){
+  $("#fortune-survey").submit(function(event){
     event.preventDefault();
 
     var luckyArray= [];
@@ -35,7 +35,19 @@ $(document).ready(function(event){
       unluckyArray.push(unluckyColor);
     });
 
-    console.log(luckyArray);
-    console.log(unluckyArray);
+    var favoriteNumber = parseInt($("#favorite-number").val());
+    if (favoriteNumber % 2 !== 0) {
+      unluckyArray.push(favoriteNumber);
+    } else {
+      luckyArray.push(favoriteNumber);
+    }
+
+    if (luckyArray.length > unluckyArray.length) {
+      alert("You will have good luck today!");
+    } else if (luckyArray.length < unluckyArray.length) {
+      alert("Uh-oh! Misfortune will befall you!");
+    } else {
+      alert("You broke even! Maybe stay away from windows tho?");
+    }
   });
 });
